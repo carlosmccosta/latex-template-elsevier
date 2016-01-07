@@ -1,0 +1,65 @@
+% !TeX encoding = UTF-8
+% !TeX root = master.tex
+% !TeX spellcheck = en_US
+
+\input{tex/preamble}
+\input{tex/glossaries}
+
+
+\journal{Journal}
+
+
+\begin{document}
+
+
+%---------------------------------------------------------------------------------------------------
+% Top matter
+%---------------------------------------------------------------------------------------------------
+
+\begin{frontmatter}
+
+\title{Title}
+
+
+\author[feup-address]{Carlos M. Costa\corref{corresponding-author-note}}
+\cortext[corresponding-author-note]{Corresponding author}
+\ead{carlos.costa@fe.up.pt}
+
+\address[feup-address]{Rua Dr. Roberto Frias, s/n 4200-465 Porto, Portugal}
+
+
+\input{tex/abstract}
+
+
+\begin{keyword}
+	keyword1 \sep keyword2 \sep keyword3 \sep keyword4
+\end{keyword}
+
+\end{frontmatter}
+
+
+%---------------------------------------------------------------------------------------------------
+% Sections
+%---------------------------------------------------------------------------------------------------
+
+\input{tex/sections/introduction}
+\input{tex/sections/related-work}
+\input{tex/sections/implementation}
+\input{tex/sections/results}
+\input{tex/sections/results-analysis}
+\input{tex/sections/conclusions}
+\input{tex/sections/acknowledgments}
+
+
+
+%---------------------------------------------------------------------------------------------------
+% Bibliography
+%---------------------------------------------------------------------------------------------------
+
+\section*{References}
+
+\bibliographystyle{elsarticle-harv}
+\bibliography{references}
+
+
+\end{document}
